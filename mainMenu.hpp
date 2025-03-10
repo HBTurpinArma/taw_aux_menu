@@ -63,12 +63,12 @@ class RscDisplayMain: RscStandardDisplay {
         //TAW Logo
         class logo: RscActivepicture {
             text="\TAW_AUX_MENU\Data\UI\taw_logo_ca.paa";
-            url="steam://connect/136.243.53.62:2602?appid=107410";
+            url="https://taw.net/";
             tooltip="TAW Arma Community";
             onButtonClick="";
             onload="";
         };
-
+        //steam://connect/136.243.53.62:2602?appid=107410
         class logoApex: logo {
             show=0;
             onload="";
