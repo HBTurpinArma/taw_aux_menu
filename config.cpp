@@ -113,7 +113,7 @@ class RscDisplayMain: RscStandardDisplay {
         class GroupTAWServers: GroupSingleplayer {
             idc = 1006;
             x = "0.5 - (5 + 3 * 10) * (pixelW * pixelGrid * 2)";
-            h = "(5 *   1.5) *  (pixelH * pixelGrid * 2)";
+            h = "(7 *   1.5) *  (pixelH * pixelGrid * 2)";
             class Controls {
                 class ConnectRNR: RscButtonMenuMain {
                     idc = 181;
@@ -125,39 +125,49 @@ class RscDisplayMain: RscStandardDisplay {
                     y = "(0) * (pixelH * pixelGrid * 2) + (pixelH)";
                     onButtonClick = "connectToServer [""136.243.53.62"", 2602, ""AM2""]";
                 };
-                class ConnectAlpha: ConnectRNR {
+                class ConnectRHQ: ConnectRNR {
                     idc = 182;
+                    text = "RHQ";
+                    tooltip = "Join RHQ Server";
+                    y = "(1 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
+                    onButtonClick = "connectToServer [""136.243.53.62"", 2802, ""AM2""]";
+                };
+                class ConnectCTC: ConnectRNR {
+                    idc = 183;
+                    text = "CTC";
+                    tooltip = "Join CTC Server";
+                    y = "(2 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
+                    onButtonClick = "connectToServer [""136.243.53.62"", 2502, ""AM2""]";
+                };
+                class ConnectAlpha: ConnectRNR {
+                    idc = 184;
                     text = "Alpha";
                     tooltip = "Join Alpha Squad Server";
-                    y = "(1 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
+                    y = "(3 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
                     onButtonClick = "connectToServer [""136.243.53.62"", 2302, ""AM2""]";
                 };
                 class ConnectBravo: ConnectRNR {
-                    idc = 183;
+                    idc = 185;
                     text = "Bravo";
                     tooltip = "Join Bravo Squad Server";
-                    y = "(2 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
+                    y = "(4 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
                     onButtonClick = "connectToServer [""136.243.53.62"", 2352, ""AM2""]";
                 };
                 class ConnectCharlie: ConnectRNR {
-                    idc = 184;
+                    idc = 186;
                     text = "Charlie";
                     tooltip = "Join Charlie Squad Server";
-                    y = "(3 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
+                    y = "(5 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
                     onButtonClick = "connectToServer [""136.243.53.62"", 2402, ""AM2""]";
                 };
                 class ConnectBattalion: ConnectRNR {
-                    idc = 185;
+                    idc = 187;
                     text = "Battalion";
                     tooltip = "Join Battalion Server";
-                    y = "(4 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
+                    y = "(6 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH)";
                     onButtonClick = "connectToServer [""136.243.53.62"", 2302, ""AM2""]";
                 };
             };
         };
-
-
-
-
     };
 };
