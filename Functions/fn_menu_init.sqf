@@ -35,11 +35,13 @@ private _fnc_onKillFocus = {
 (_controlsGroup controlsGroupCtrl 1037) ctrlAddEventHandler ["KillFocus", _fnc_onKillFocus];
 
 
+//Handle Steam Friends Icon
+//https://community.bistudio.com/wiki/getSteamFriendsServers
+//TODO: Can obtain list of servers friends are on and if it matches our servers, show friend icon with a number.
 
+//Handle Server Button Group
+//TODO: Need to essentially replicate the show/hide functions of the main menu buttons. The code is pretty messy to take fully.
 
-
-
-// //Handle Server Button Group
 // private _fnc_groupEnter = {
 // 	params ["_control"];
 
