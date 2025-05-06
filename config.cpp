@@ -117,7 +117,7 @@ class RscDisplayMain: RscStandardDisplay {
         class GroupTAWServers: GroupSingleplayer {
             idc = 1006;
             x = "0.5 - (5 + 3 * 10) * (pixelW * pixelGrid * 2)";
-            h = "(10 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH * 13)";
+            h = "(11 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH * 13)";
             class Controls {
                 class ConnectAM2_RNR: RscButtonMenuMain {
                     idc = 181;
@@ -242,10 +242,23 @@ class RscDisplayMain: RscStandardDisplay {
 
                 class ConnectAM2_Liberation: ConnectAM2_RNR {
                     idc = 190;
-                    text = "Liberation";
+                    text = "Liberation #1";
                     tooltip = "Join Liberation Server";
                     y = "(9 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH * 13)";
-                    onButtonClick = "connectToServer [""136.243.53.62"", 2702, ""AM2""]";
+                    onButtonClick = "connectToServer [""136.243.53.62"", 4202, ""AM2""]";
+                    animTextureNormal="#(argb,8,8,3)color(0,0,0,1)";
+                    animTextureDisabled="#(argb,8,8,3)color(0,0,0,1)";
+                    animTextureOver="#(argb,8,8,3)color(1,1,1,1)";
+                    animTextureFocused="#(argb,8,8,3)color(1,1,1,1)";
+                    animTexturePressed="#(argb,8,8,3)color(0,0,0,1)";
+                    animTextureDefault="#(argb,8,8,3)color(0,0,0,1)";
+                };
+                class ConnectAM2_Antistasi: ConnectAM2_RNR {
+                    idc = 190;
+                    text = "Antistasi #1";
+                    tooltip = "Join Antistasi Server";
+                    y = "(10 * 1.5) * (pixelH * pixelGrid * 2) + (pixelH * 13)";
+                    onButtonClick = "connectToServer [""136.243.53.62"", 4002, ""AM2""]";
                     animTextureNormal="#(argb,8,8,3)color(0,0,0,1)";
                     animTextureDisabled="#(argb,8,8,3)color(0,0,0,1)";
                     animTextureOver="#(argb,8,8,3)color(1,1,1,1)";
